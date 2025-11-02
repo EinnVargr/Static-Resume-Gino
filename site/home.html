@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gino Garic Resume</title>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div id="page-content">
+      <h1>Gino's Resume</h1>
+      <p>Hi Maja & Mom.</p>
+    </div>
+
+    <script>
+      fetch('fragments/navigation/navBar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
