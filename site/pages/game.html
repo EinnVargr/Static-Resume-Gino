@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <title>Resume</title>
+    <meta charset="UTF-8">
+    <title>Gameplay</title>
+    <link rel="stylesheet" href="../../styling/pages/game.css">
   </head>
 
   <body>
     <div id="navbar"></div>
-
-    <div id="page-content">
-      <h1>My Resume</h1>
-    </div>
+    <div id="page-content"></div>
 
     <script>
         fetch('../fragments/navigation/navBarSub.html')
@@ -19,5 +17,8 @@
                 document.getElementById('navbar').innerHTML = data;
             });
     </script>
+
+    <link rel="modulepreload" href="../programs/test-game.js">
+    <script type="module" src="../programs/test-game.js"></script>
   </body>
 </html>
